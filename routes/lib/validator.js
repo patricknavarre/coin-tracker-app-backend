@@ -98,6 +98,7 @@ const checkLoginIsEmpty = (req, res, next) => {
   let errorObj = {};
 
   const { email, password } = req.body;
+  // console.log(req.body)
 
   if (checkIfEmpty(email)){
     errorObj.email = "Email cannot be empty";
