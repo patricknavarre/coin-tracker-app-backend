@@ -14,7 +14,7 @@ require('dotenv').config();
 
 // mongoose boiler-plate - 
 mongoose
-  .connect("mongodb://localhost:27017/coin-tracker-app", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
